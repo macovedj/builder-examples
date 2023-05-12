@@ -1,5 +1,5 @@
 /// An example world for the component to target.
 default world component {
-    import greet: func(name: string) -> string
+    import hello-world: func(name: string) -> string
     export big-greet: func(name: string) -> string
 }                
