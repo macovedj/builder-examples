@@ -14,6 +14,9 @@ const bigInstance = graph.instantiateComponent(bigComponent.id)
 console.log({helloInstance, bigInstance})
 const bigHello = graph.connectInstances(helloInstance, 0, bigInstance, 5)
 console.log({bigHello})
-const bytes = graph.encodeGraph(true, 1, true)
+const bytes = graph.encodeGraph({
+  defineComponents: true, 
+  export: 1, 
+  validate: true
+})
 writeFileSync("./big-greet.wasm", bytes)
-// console.log(bigGreet("Danny"))
