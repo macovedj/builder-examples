@@ -1,5 +1,7 @@
 {
+  "type": "module",
   "dependencies": {
-    "@bytecodealliance/preview2-shim": "^0.0.3"
+    "@bytecodealliance/jco": "^0.6.1",
+    "@bytecodealliance/preview2-shim": "^0.0.7"
   }
 }
